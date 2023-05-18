@@ -27,7 +27,7 @@ export const HomePage = () => {
             scrollTrigger: {
               trigger: slider.current,
               scrub: 1,
-              snap: 1 / (panels.length - 1),
+              snap: 50 / (panels.length - 1),
               start: `top+=${pixelsPause} top`,
               end: () => "+=" + window.innerWidth * panels.length,
               markers: false,

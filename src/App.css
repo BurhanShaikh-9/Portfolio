@@ -150,15 +150,18 @@ h5 {
 .app .welcome .welcomeInner .inner .ba {
   right: 75px;
   width: 300px;
+  display: none;
 }
 .app .welcome .welcomeInner .inner .ha {
   width: 220px;
   top: 30px;
+  display: none;
 }
 .app .welcome .welcomeInner .inner .no {
   left: 45px;
   top: 80px;
   width: 170px;
+  display: none;
 }
 .app .middleContainer {
   width: 600dvw;
