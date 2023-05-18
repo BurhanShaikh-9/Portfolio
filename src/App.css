@@ -1,0 +1,306 @@
+@font-face {
+  font-family: "LobsterItalic";
+  src: url("./assets/Fonts/LobsterTwo-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BoldLobsterItalic";
+  src: url("./assets/Fonts/LobsterTwo-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "MartelBlack";
+  src: url("./assets/Fonts/Martel-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NeutonRegular";
+  src: url("./assets/Fonts/Neuton-Regular.ttf") format("truetype");
+}
+.noise {
+  position: fixed;
+  z-index: 9999;
+  top: -300%;
+  left: -150%;
+  height: 600%;
+  width: 600%;
+  animation: grain 7s steps(10) infinite;
+  background-image: url(assets/noise.png);
+  background-size: 200px;
+  background-repeat: repeat;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+@keyframes grain {
+  0%, 100% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%);
+  }
+  70% {
+    transform: translateY(15%);
+  }
+  80% {
+    transform: translate(3%, 35%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+}
+.container {
+  max-width: 100%;
+  padding-right: 100px;
+  padding-left: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "MartelBlack";
+}
+
+.Header {
+  font-family: "LobsterItalic";
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.Header .headerInner {
+  position: fixed;
+  height: 70px;
+  top: 0;
+  width: 83%;
+  display: flex;
+  z-index: 999999999999;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+}
+.Header .headerInner .menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+.Header .headerInner .menuOuter {
+  display: none;
+}
+.Header .nav2 {
+  display: none;
+}
+
+.app {
+  font-family: "NeutonRegular";
+  transition: all 3s;
+}
+.app .welcome {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app .welcome .welcomeInner {
+  margin-top: 60px;
+}
+.app .welcome .welcomeInner .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 500px;
+  width: 600px;
+  opacity: 0.9;
+}
+.app .welcome .welcomeInner .inner img {
+  position: absolute;
+}
+.app .welcome .welcomeInner .inner .ba {
+  right: 75px;
+  width: 300px;
+}
+.app .welcome .welcomeInner .inner .ha {
+  width: 220px;
+  top: 30px;
+}
+.app .welcome .welcomeInner .inner .no {
+  left: 45px;
+  top: 80px;
+  width: 170px;
+}
+.app .middleContainer {
+  width: 600dvw;
+  height: 100dvh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.app .middleContainer .panel {
+  scroll-behavior: smooth;
+  width: 100dvw;
+  height: 100dvh;
+}
+.app .middleContainer .about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app .middleContainer .about .aboutInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.app .middleContainer .about .aboutInner .leftSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.app .middleContainer .about .aboutInner .leftSection img {
+  border: 1px solid black;
+  padding: 5px;
+  width: 300px;
+}
+.app .middleContainer .about .aboutInner .rightSection {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.app .middleContainer .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: chartreuse;
+}
+.app .project {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .container {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+  .welcome .welcomeInner .inner {
+    width: 550px !important;
+  }
+  .welcome .welcomeInner .inner img {
+    position: absolute;
+  }
+  .welcome .welcomeInner .inner .ba {
+    right: 75px;
+    width: 270px !important;
+  }
+  .welcome .welcomeInner .inner .ha {
+    width: 190px !important;
+    top: 63px !important;
+  }
+  .welcome .welcomeInner .inner .no {
+    left: 66px !important;
+    top: 110px !important;
+    width: 140px !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .Header {
+    position: relative;
+  }
+  .Header .headerInner .menu {
+    display: none;
+  }
+  .Header .headerInner .menuOuter {
+    display: block;
+    position: relative;
+    z-index: 20;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+  }
+  .Header .headerInner .menuOuter .menuUp {
+    height: 2px;
+    width: 25px;
+    margin-bottom: 5px;
+    background-color: black;
+  }
+  .Header .headerInner .menuOuter .menuMid {
+    height: 2px;
+    width: 25px;
+    background-color: black;
+  }
+  .Header .headerInner .menuOuter .menuDown {
+    height: 2px;
+    width: 25px;
+    background-color: black;
+    margin-top: 5px;
+  }
+  .Header .nav2 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.541);
+    width: 100dvw;
+    height: 100dvh;
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+  }
+  .Header .nav2 p a {
+    color: white !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}/*# sourceMappingURL=App.css.map */
