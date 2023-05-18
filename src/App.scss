@@ -319,4 +319,27 @@ h5 {
     padding-right: 20px;
     padding-left: 20px;
   }
+  .welcome {
+    .welcomeInner {
+      .inner {
+        width: 310px !important;
+        img {
+          position: absolute;
+        }
+        .ba {
+          right: 20px !important  ;
+          width: 180px !important;
+        }
+        .ha {
+          width: 120px !important;
+          top: 137px !important;
+        }
+        .no {
+          left: 13px !important;
+          top: 165px !important;
+          width: 97px !important;
+        }
+      }
+    }
+  }
 }
