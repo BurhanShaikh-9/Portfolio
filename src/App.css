@@ -199,6 +199,7 @@ h5 {
 }
 .app .middleContainer .about .aboutInner .rightSection {
   width: 50%;
+  min-width: 396px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
