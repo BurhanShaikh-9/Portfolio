@@ -205,11 +205,55 @@ h5 {
   justify-content: flex-start;
   align-items: center;
 }
-.app .middleContainer .contact {
+.app .middleContainer .skill {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: chartreuse;
+}
+.app .middleContainer .skill .skillInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  flex-direction: row;
+  width: 100%;
+}
+.app .middleContainer .skill .skillInner .upperSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.app .middleContainer .skill .skillInner .bottomSection {
+  min-width: 480px;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 20px;
+  flex-direction: column;
+}
+.app .middleContainer .skill .skillInner .bottomSection .bottomInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+.app .middleContainer .skill .skillInner .bottomSection .bottomInner .skillContainer {
+  width: 70px;
+  height: 70px;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.app .middleContainer .skill .skillInner .bottomSection .bottomInner .skillContainer img {
+  width: 50px;
 }
 .app .project {
   height: 100dvh;
@@ -222,6 +266,10 @@ h5 {
   .container {
     padding-right: 120px;
     padding-left: 120px;
+  }
+  .skill .skillInner .upperSection {
+    width: 100% !important;
+    text-align: center !important;
   }
 }
 @media only screen and (max-width: 991px) {

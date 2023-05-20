@@ -2,10 +2,11 @@ import React, { useEffect, useLayoutEffect, useRef } from 'react'
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { About } from '../component/about'
-import { Contact } from '../component/contact'
+// import { Contact } from '../component/contact'
 import { Project } from '../component/project'
 import { useOutletContext } from "react-router-dom";
 import { Welcome } from '../component/welcome';
+import { Skill } from '../component/skill';
 
 export const HomePage = () => {
     const component = useRef(null);
@@ -52,7 +53,7 @@ export const HomePage = () => {
                 
                 <div ref={slider} className="middleContainer">
                     <div id="About" ref={aboutRef} path="about-section" className='panel about'> <About/> </div>
-                    <div id="Contact" ref={contactRef} className='panel contact'> <Contact/> </div>
+                    <div id="Skill" ref={contactRef} className='panel skill'> <Skill/> </div>
                 </div>
 
                 <div id="Project" className=' project'> <Project/> </div>

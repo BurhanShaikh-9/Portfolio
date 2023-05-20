@@ -25,8 +25,7 @@ export const Header = ({ aboutRef, contactRef }) => {
                     <div className="menu">
                         {/* <p> <a href="#welcome">Home</a> </p> */}
                         <p> <a href="#" onClick={handleAboutClick}>About</a> </p>
-                        <p> <a href="#" onClick={handleAboutClick}>Skills</a> </p>
-                        <p><a href="#Project">Projects</a></p>
+                        <p> <a href="#" onClick={handleAboutClick}>Project</a> </p>
                         <p><a href="#" onClick={handleContactClick}>Contact</a></p>
                     </div>
                     <button className="menuOuter" onClick={() => { setIsNav(!isNav) }}>
